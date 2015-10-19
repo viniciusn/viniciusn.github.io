@@ -9,12 +9,12 @@
     },
     {
       "src": "images/VN logo-green-sea-norma.png",
-      "sizes": "144x144",
+      "sizes": "128x74",
       "type": "image/png"
     },
     {
       "src": "images/VN logo-green-sea-norma.png",
-      "sizes": "192x192",
+      "sizes": "192x111",
       "type": "image/png"
     }
   ],

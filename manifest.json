@@ -4,17 +4,17 @@
   "icons": [
     {
       "src": "images/VN logo-green-sea-norma.png",
-      "sizes": "64x37",
+      "sizes": "64x64",
       "type": "image/png"
     },
     {
       "src": "images/VN logo-green-sea-norma.png",
-      "sizes": "128x74",
+      "sizes": "128x128",
       "type": "image/png"
     },
     {
       "src": "images/VN logo-green-sea-norma.png",
-      "sizes": "192x111",
+      "sizes": "192x192",
       "type": "image/png"
     }
   ],

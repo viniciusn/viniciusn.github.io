@@ -4,17 +4,70 @@ padding: 0;
 box-sizing: border-box;
 }
 
+@media screen and (min-width: 700px){
+
 html {
 font-size: 16px;
+font-family: sans-serif, 'Open Sans';
+width: 100vw;
+height: 100vh;
+background-image: url(../images/office.jpg);
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
 }
 
-div {
-border: 2px solid #2ecc71;
+ul {
 display: block;
-font-family: sans-serif;
+position: absolute;
+width: 200px;
 height: auto;
+margin-left: 80vw;
+margin-top: -25vh;
+}
+
+li {
+float: left;
+margin: .5rem;
+list-style: none;
+}
+
+li a {
+color: white;
+font-size: 2rem;
+text-decoration: none;
+text-shadow: 1px 1px 2px black;
+}
+
+li a:hover {
+text-decoration: underline;
+color: #16a085;
+}
+
+.img {
+display: block;
 margin: 200px auto;
 text-align: center;
-vertical-align: center;
 width: 20rem;
+}
+
+.nome {
+display: block;
+position: relative;
+width: 320px;
+margin: 0 auto;
+top: -100px;
+}
+
+p{
+color: white;
+display: block;
+font-size: 2rem;
+height: auto;
+margin: 0 auto;
+text-align: center;
+text-shadow: 1px 1px 2px black;
+width: 20rem;
+}
 }

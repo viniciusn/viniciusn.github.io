@@ -35,7 +35,14 @@ module.exports = function(grunt){
 				browser: true,
 				strict: true,
 				freeze: true,
-				futurehostile: true
+				futurehostile: true,
+				globals: {
+					'$': true,
+					'jQuery': true,
+					'window': true,
+					'document': true,
+					'module': true
+				}
 			},
 			files: {
 				src: ['dev/js/script.js']

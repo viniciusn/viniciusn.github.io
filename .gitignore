@@ -1,2 +1,8 @@
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+._*
+_site
+
 dev
 node_modules

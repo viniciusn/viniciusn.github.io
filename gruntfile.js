@@ -9,21 +9,24 @@ module.exports = function(grunt){
 			dist: {
 				files: {
 					"index.html": "dev/index.html",
-					"blog/index.html": "dev/blog/index.html"
+					"blog/index.html": "dev/blog/index.html",
+					"schedule/index.html": "dev/schedule/index.html"
 				}
 			}
 		},
 		cssmin: {
 			minify: {
 				files: {
-					"css/estilo.css": "dev/css/estilo.css"
+					"css/estilo.css": "dev/css/estilo.css",
+					"schedule/css/style.css": "dev/schedule/css/style.css"
 				}
 			}
 		},
 		uglify: {
 			my_targets: {
 				files: {
-					"js/script.js": "dev/js/script.js"
+					"js/script.js": "dev/js/script.js",
+					"schedule/js/script.js": "dev/schedule/js/script.js"
 				}
 			}
 		},
@@ -45,7 +48,7 @@ module.exports = function(grunt){
 				}
 			},
 			files: {
-				src: ['dev/js/script.js']
+				src: ['dev/js/script.js','dev/schedule/js/script.js']
 			}
 		},
 		imagemin: {
@@ -75,21 +78,21 @@ module.exports = function(grunt){
 		},
 		watch: {
 			js: {
-				files: ['dev/js/*.js'],
+				files: ['dev/js/*.js','dev/schedule/js/*.js'],
 				tasks: ['jshint','uglify'],
 				options: {
 					spawn: false
 				}
 			},
 			css: {
-				files: ['dev/css/*.css'],
+				files: ['dev/css/*.css','dev/schedule/css/*.css'],
 				tasks: ['cssmin'],
 				options: {
 					spawn: false
 				}
 			},
 			html: {
-				files: ['dev/*.html','dev/blog/*.html'],
+				files: ['dev/*.html','dev/blog/*.html','dev/schedule/*.html'],
 				tasks: ['htmlmin'],
 				options: {
 					spawn: false

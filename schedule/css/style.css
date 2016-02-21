@@ -1,1 +1,1 @@
-*{margin:0;padding:0;font-family:sans-serif,"Open Sans"}
+*{margin:0;padding:0;font-family:sans-serif,"Open Sans";box-sizing:border-box}@media screen and (max-width:320px){body{font-size:3rem;background-color:#16a085}.container{padding:1em}label{display:block;margin:0 auto}input{border:.2rem solid #16a085;border-radius:1rem}input[type=number]{text-align:center;font-size:3rem;width:15rem;height:8rem}input[type=date]{font-size:5.5rem;text-align:center}button{font-size:5rem}}.container{width:900px;height:auto;margin:0 auto}

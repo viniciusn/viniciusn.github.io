@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel=icon href=img/favicon.ico sizes="16x16">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="dist/clipboard.min.js"></script>
+
+    <title>Manutenções GRC</title>
+</head>
+<body>
+
+    <!--
+    <div class="input-field">
+        <select name="" id="tipo_de_manutencao">
+            <option value="" disabled selected>Selecione o tipo de manutenção</option>
+            <option value="funcao">Manutenção de Função</option>
+            <option value="perfil">Manutenção de Perfil</option>
+        </select>
+        <label>Selecione o tipo de manutenção</label>
+    </div>
+    -->
+
+    <form onsubmit="return false;">
+
+        <div class="radio-buttons">
+            <label for="">Selecione o tipo de manutenção
+                <p>
+                    <label>
+                        <input id="radio_funcao" class="with-gap radio-button" value="funcao" name="manutencoes" type="radio" required/>
+                        <span>Manutenção de função</span>
+                    </label>
+                </p>
+
+                <p>
+                    <label>
+                        <input id="radio_perfil" class="with-gap radio-button" value="perfil" name="manutencoes" type="radio" required/>
+                        <span>Manutenção de perfil</span>
+                    </label>
+                </p>
+            </label>
+        </div>
+
+        <div class="input-field">
+            <input type="text" id="numero_solicitacao" class="validate" name="" required placeholder="Nº Solicitação">
+            <label for="numero_solicitacao"></label>
+        </div>
+        <div class="input-field">
+            <input type="text" id="nome_da_funcao" class="validate" name="" required placeholder="Função ou Perfil">
+            <label for="nome_da_funcao"></label>
+        </div>
+        <div class="input-field">
+            <textarea name="" id="solicitacao" class="validate materialize-textarea" cols="30" rows="10" required placeholder="Solicitação"></textarea>
+            <label for="solicitacao"></label>
+        </div>
+        <div class="input-field">
+            <textarea name="" id="dados_usuario" class="validate materialize-textarea" cols="30" rows="10" required placeholder="Dados do usuário"></textarea>
+            <label for="dados_usuario"></label>
+        </div>
+        
+        <button id="btn-gerar" class="btn gerar waves-effect waves-light" type="submit" name="action">Gerar Scripts
+            <i class="material-icons right">send</i>
+        </button>
+
+        <a href="#" id="btn-limpar" class="btn limpar waves-effect waves-light">
+            Limpar<i class="material-icons right">backspace</i>
+        </a>
+    </form>
+
+    <div id="resultado">
+        <p id="script_abertura_chamado">
+        </p>
+        <button id="btn_script_abertura" class="btn btn-clipboard waves-effect waves-light" data-clipboard-target="#script_abertura_chamado" type="submit" name="action">Copiar
+            <i class="material-icons right">content_copy</i>
+        </button>
+
+        <p id="script_solicitacao_aprovacao">
+        </p>
+        <button id="btn_script_aprovacao" class="btn btn-clipboard waves-effect waves-light" data-clipboard-target="#script_solicitacao_aprovacao" type="submit" name="action">Copiar
+            <i class="material-icons right">content_copy</i>
+        </button>
+
+        <p id="script_solicitacao_em_pendencia">
+        </p>
+        <button id="btn_script_pendencia" class="btn btn-clipboard waves-effect waves-light" data-clipboard-target="#script_solicitacao_em_pendencia" type="submit" name="action">Copiar
+            <i class="material-icons right">content_copy</i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+    
+</body>
+</html>

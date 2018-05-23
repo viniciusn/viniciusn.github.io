@@ -1,0 +1,11 @@
+form {
+    padding: 10px;
+}
+
+#resultado {
+    padding: 10px;
+}
+
+::placeholder {
+    color: #00bfa5 ;
+}
